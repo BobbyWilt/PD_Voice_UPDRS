@@ -1,5 +1,6 @@
 # PD_Voice_UPDRS
 Parkinson's patient dataset containing movement scores and audio recordings.
+Medium article link: https://medium.com/@bobbywilt1/predicting-parkinsonian-symptom-severity-from-voice-recordings-5efcfdc406a
 
 Dataset obtained from: https://www.kaggle.com/mountainguest/parkinsons-telemonitoring?select=parkinsons_updrs.names
 

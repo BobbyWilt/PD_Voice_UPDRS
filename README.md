@@ -1,35 +1,13 @@
-# PD_Voice_UPDRS
+# PD Voice UPDRS
+This project ingests a dataset from Kaggle containing 1500 Parkinsonian voice recordings, and for each voice recording, a labelled symptom severity score (UPDRS) is provided.  A variety of regression models are fitted, tuned, and their model performances are evaluated to select the best fitting model.
+
+## Links
 Parkinson's patient dataset containing movement scores and audio recordings.
 Medium article link: https://medium.com/@bobbywilt1/predicting-parkinsonian-symptom-severity-from-voice-recordings-5efcfdc406a
 
 Dataset obtained from: https://www.kaggle.com/mountainguest/parkinsons-telemonitoring?select=parkinsons_updrs.names
 
-Data Dictionary:
-ATTRIBUTE INFORMATION:
+Original research paper: https://www.researchgate.net/publication/40026354_Accurate_Telemonitoring_of_Parkinson%27s_Disease_Progression_by_Noninvasive_Speech_Tests
 
-    subject# - Integer that uniquely identifies each subject
-    age - Subject age
-    sex - Subject gender '0' - male, '1' - female
-    test_time - Time since recruitment into the trial. The integer part is the number of days since recruitment.
-    motor_UPDRS - Clinician's motor UPDRS score with real scores at baseline, 3 month, and 6 month, linearly interpolated
-    total_UPDRS - Clinician's total UPDRS score with real scores at baseline, 3 month, and 6 month, linearly interpolated
-    Jitter - variations in fundamental frequency between pitch periods
-    Jitter(%),Jitter(Abs),Jitter:RAP,Jitter:PPQ5,Jitter:DDP - Several measures of variation in fundamental frequency
-    Shimmer - amplitude - variations in speech amplitude between pitch periods
-    Shimmer,Shimmer(dB),Shimmer:APQ3,Shimmer:APQ5,Shimmer:APQ11,Shimmer:DDA - Several measures of variation in amplitude
-    NHR,HNR - Two measures of ratio of noise to tonal components in the voice (H - harmonics or tonal components and also called signal, N - noise).
-    RPDE - A nonlinear dynamical complexity measure. Stands for Recurrence Period Density Entropy
-        Addresses ability of vocal folds to sustain simple vibration and quantifies the deviations from exact periodicity.
-        Represents uncertainty of measurement of exact period for the signal
-        Dysphonias (horseness and crackiness) usually increase RPDE
-    DFA - Signal fractal scaling exponent.
-        Characterizes extent of turbulent noise in the speech signal. Quantifies similar randomess in noise that is due to sporadic air flow through the vocal tract
-        Breathiness dysphonias increase this metric
-    PPE - A nonlinear measure of fundamental frequency variation. Stands for Pitch Period Entropy
-        Measures impaired control of stable pitch during sustained phonation
-        Significantly distinguishes between healthy and PD-impaired speech
-
-Supporting terminology:
-
-    F0 - fundamental frequency whic is the vibration frequency of the vocal folds (men ~120 hz, female ~200hz)
-    pitch period - inverse of F0, and duration of fundamental frequency. Used to for feature creation by finding min and max amplitudes of speech within a pitch period 
+## Motivation
+Assessing Parkinson's symptom severity is typically completed during in-person clinical visits.  Due to the Covid pandemic and travel difficulties for patients, attending an in-person visit can be problematic for patients.  Remote-accessible diagnosistic methods would be preferrable for some Parkinson's patients and may even help patients and clinicians track a patient's symptoms more closely than in-person assessments.  A research study by Dr. Tsanas was conducted in 2009 to assess the accuracy of using voice recordings to predict a patient's disease symptom severity score (UPDRS).  The goal of this project is to implement modern machine learning models to the same dataset as the paper to see if the prediction accuracy could be further improved.

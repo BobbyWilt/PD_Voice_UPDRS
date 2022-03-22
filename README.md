@@ -1,5 +1,5 @@
 # PD Voice UPDRS
-This project utilizes a dataset from Kaggle containing 1500 Parkinsonian voice recordings, and for each voice recording, a labelled symptom severity score (UPDRS) is provided.  A variety of regression models are fitted, tuned, and their model performances are evaluated to select the best fitting model.
+This project utilizes a dataset from Kaggle containing 1500 Parkinsonian voice recordings, and for each voice recording, a labelled symptom severity score (UPDRS) is provided.  A variety of regression models are fitted on the dataset to predict the UPDRS score.  Hyperameter tuning is applied to each model and model performance metrics are compared.
 
 ## Links
 Parkinson's patient dataset containing movement scores and audio recordings.

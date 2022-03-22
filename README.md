@@ -14,3 +14,6 @@ Assessing Parkinson's symptom severity is typically completed during in-person c
 
 ## How to Use
 Download and run the notebook file "PD_Process" on your text editor of choice.  
+
+## Author
+Bobby Wilt - [Linkedin](https://www.linkedin.com/in/bobbywilt/)

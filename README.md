@@ -2,7 +2,6 @@
 This project utilizes a dataset from Kaggle containing 1500 Parkinsonian voice recordings, and for each voice recording, a labelled symptom severity score (UPDRS) is provided.  A variety of regression models are fitted on the dataset to predict the UPDRS score.  Hyperameter tuning is applied to each model and model performance metrics are compared.
 
 ## Links
-Parkinson's patient dataset containing movement scores and audio recordings.
 Medium article link: https://medium.com/@bobbywilt1/predicting-parkinsonian-symptom-severity-from-voice-recordings-5efcfdc406a
 
 Dataset obtained from: https://www.kaggle.com/mountainguest/parkinsons-telemonitoring?select=parkinsons_updrs.names

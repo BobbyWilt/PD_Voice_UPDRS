@@ -12,7 +12,7 @@ Original research paper: https://www.researchgate.net/publication/40026354_Accur
 Assessing Parkinson's symptom severity is typically completed during in-person clinical visits.  Due to the Covid pandemic and travel difficulties for patients, attending an in-person visit can be problematic for patients.  Remote-accessible diagnosistic methods would be preferrable for some Parkinson's patients and may even help patients and clinicians track a patient's symptoms more closely than in-person assessments.  A research study by Dr. Tsanas was conducted in 2009 to assess the accuracy of using voice recordings to predict a patient's disease symptom severity score (UPDRS).  The goal of this project is to develop a more accurate machine learning model than the model mentioned in the research paper above by using the same dataset and by implementing hyperparamter tuning.
 
 ## How to Use
-Download and run the notebook file "PD_Process" on your text editor of choice.  
+Download and run the notebook file "PD_Process" using your text editor of choice.  
 
 ## Author
 Bobby Wilt - [Linkedin](https://www.linkedin.com/in/bobbywilt/)
